@@ -1,5 +1,112 @@
 /*----------------------------------------------------------------------------- 
-=MAIN STYLES  
+=CUSTOM STYLES  
+-----------------------------------------------------------------------------*/
+@import url();
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: ;
+	line-height: 1.5;
+}
+
+h1 /* Landing title */{
+	font-size: 90px;
+	margin-bottom: 50px;
+}
+
+h2  /* Strapline text */{
+	font-size: 32px;
+	line-height: 1.5;
+}
+
+h3  /* Section title text */{
+	font-size: 50px;
+	margin: 5px 0 30px 0;
+	color: orange;
+}
+
+p  /* Regular content */{
+	font-size: 20px;
+	line-height: 1.7;
+	margin: 20px 0px 20px 0px;
+}
+
+#landing {
+	background: url(../images/junk.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 100px;
+	width: 100%;
+	margin: 0 auto 0 auto;
+	color: orange;
+	text-align: center;
+}
+
+#strapline {
+	width: 60%;
+	margin: 0 auto 0 auto;
+}
+
+#social {
+	width: 300px;
+	height: 105px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	font-weight: 100;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#bio {
+	background: ;
+	width: 100%;
+	padding: 60px 90px 40px 90px;
+	text-align: center;
+}
+
+.profilepic {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 1px solid orange;
+	margin-bottom: 20px;
+}
+
+#bio .col-xs-6 {
+	padding: 15px;
+}
+
+#portfolio {
+	background: skyblue;
+	width: 100%;
+	height: 600px;
+	padding: 25px 75px 25px 75px;
+}
+
+#skills {
+	background: pink;
+	width: 100%;
+	padding: 25px 75px 25px 75px;
+}
+
+#contact {
+	background: #56A454;
+	width: 100%;
+	height: 400px;
+	padding: 25px 75px 25px 75px;
+	text-align: center;
+}
+
+footer {
+	background: silver;
+	width: 100%;
+	padding: 10px;
+}
+
+/*----------------------------------------------------------------------------- 
+=BASE STYLES  
 -----------------------------------------------------------------------------*/
 
 .banner img {
@@ -30,9 +137,4 @@
 
 .companies img {
 	margin: 50px 0;
-}
-
-footer {
-	background: url('../images/grey-texture.jpg');
-	padding: 40px;
 }
