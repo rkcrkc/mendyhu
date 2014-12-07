@@ -3,19 +3,32 @@
 -----------------------------------------------------------------------------*/
 @import url();
 
+.clear {
+	clear: both;
+}
+
+.align-right {
+	float: right;
+}
+
+.align-left {
+	float: left;
+}
+
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: sans-serif;
 	color: ;
 	line-height: 1.5;
 }
 
 h1 /* Landing title */{
 	font-size: 90px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
+	margin-top: 0px;
 }
 
 h2  /* Strapline text */{
-	font-size: 32px;
+	font-size: 26px;
 	line-height: 1.5;
 }
 
@@ -26,9 +39,16 @@ h3  /* Section title text */{
 }
 
 p  /* Regular content */{
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.7;
 	margin: 20px 0px 20px 0px;
+}
+
+.divider {
+	height: 1px;
+	width: 60%;
+	border-color: silver;
+	margin-bottom: 50px;
 }
 
 #landing {
@@ -43,98 +63,224 @@ p  /* Regular content */{
 	text-align: center;
 }
 
-#strapline {
+#landingoverlay {
+	background-color: rgba(0,0,0,0.5);
+	width: 65%;
+	padding: 15px;
+	margin: 0 auto 0 auto;
+}
+
+.profilepic /* Landing page pic */{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 4px solid white;
+	margin-bottom: 20px;
+}
+
+#strapline /* Landing page strapline */{
+	padding-bottom: 5px;
 	width: 60%;
 	margin: 0 auto 0 auto;
 }
 
-#social {
-	width: 300px;
-	height: 105px;
+#social /* Social media icons */{
+	width: 220px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 25px;
-	font-weight: 100;
-	font-size: 18px;
+	padding-bottom: 50px;
 	text-decoration: none;
+}
+
+#social img {
+	height: 52px;
 }
 
 #bio {
 	background: ;
 	width: 100%;
-	padding: 60px 90px 40px 90px;
+	padding: 60px 90px 0px 90px;
 	text-align: center;
-}
-
-.profilepic {
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	border: 1px solid orange;
-	margin-bottom: 20px;
 }
 
 #bio .col-xs-6 {
 	padding: 15px;
 }
 
+#bio img {
+   margin-top: 15%;
+}
+
+.biopic /* Pic in Bio section */{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 4px solid orange;
+}
+
 #portfolio {
-	background: skyblue;
 	width: 100%;
-	height: 600px;
-	padding: 25px 75px 25px 75px;
-}
-
-#skills {
-	background: pink;
-	width: 100%;
-	padding: 25px 75px 25px 75px;
-}
-
-#contact {
-	background: #56A454;
-	width: 100%;
-	height: 400px;
-	padding: 25px 75px 25px 75px;
 	text-align: center;
 }
 
+#portfolio h2 {
+	padding-bottom: 150px;
+}
+
+#portfolio img {
+	width: 100%;
+}
+
+#skills {
+	background: white;
+	width: 100%;
+	padding: 50px 75px 50px 75px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#skillspanels {
+	margin: 0 auto;
+}
+
+#contact {
+	background: url(../images/congruent_pentagon.png);
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	padding: 50px 75px 0px 75px;
+	text-align: center;
+}
+
+#contact p {
+	font-size: 24px;
+}
+
+#contact #social {
+	margin-top: 40px;
+}
+
+.contactpic /* Pic in Contact section */{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 4px solid white;
+	margin: 30px;
+}
+
 footer {
-	background: silver;
+	background: url(../images/footer_lodyas.png);
 	width: 100%;
 	padding: 10px;
+	padding-left: 50px;
+	color: silver;
+}
+
+p, a {
+	text-decoration: none;
 }
 
 /*----------------------------------------------------------------------------- 
-=BASE STYLES  
+=SKILLS PANELS  
 -----------------------------------------------------------------------------*/
 
-.banner img {
-	 width: 100%;
+h5 /* Panel title */{
+	font-size: 20px;
+	color: white;
 }
 
-.marketing .row {
-	text-align: center;	
+h6 /* Panel text */{
+	font-size: 14px;
+	line-height: 1.35;
+	color: white;
 }
 
-.navbar {
-	margin-bottom: 0; /* removes default excess margin */
+.panelrow1 {
+	width: 300px;
+	min-height: ;
+	margin: 15px;
+	display: inline-block;
 }
 
-.divider {
-  margin: 80px 0; 
+.panelrow2 {
+	width: 465px;
+	height: ;
+	margin: 15px;
+	display: inline-block;
 }
 
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+#panel1 /* Panel 1 base */{
+	background: url(../images/food.png);
 }
 
-.companies h3 {
-	margin-bottom: 40px;
+#panel2 /* Panel 2 base */{
+	background: url(../images/food.png);
 }
 
-.companies img {
-	margin: 50px 0;
+#panel3 /* Panel 3 base */{
+	background: url(../images/food.png);
 }
+
+#panel4 /* Panel 4 base */{
+	background: url(../images/restaurant.png);
+}
+
+#panel5 /* Panel 5 base */{
+	background: url(../images/restaurant.png);
+}
+
+/* ========= Vertical panels ========= */
+.panel-vertical-base {
+	background: ;
+}
+
+.panel-vertical-title {
+	background: orange;
+	width: 170px;
+	padding: 4px;
+	margin: 0px 65px 0px 65px;
+}
+
+.panel-vertical-text {
+	background-color: rgba(0,0,0,0.5);
+	width: 200px;
+	margin: 80px auto;
+	padding: 0px 10px 0px 10px;
+}
+
+.panel-vertical-text h5 {
+	opacity: 1;
+}
+
+/* ========= Horizontal panels ========= */
+.panel-horizontal-base {
+	background: ;
+}
+
+.panel-horizontal-content {
+	background-color: rgba(0,0,0,0.5);
+	width: 275px;
+	padding: 4px;
+	margin: 50px auto;
+}
+
+/* ========= Panel 5 =========
+#panel5 {
+	background: url(../images/restaurant.png);
+}
+
+#panel5-a {
+	background: grey;
+	width: 175px;
+	height: 70px;
+	padding: 4px;
+	margin: 0px 145px;
+}
+
+#panel5-b {
+	background: grey;
+	width: 250px;
+	margin: 50px auto;
+}
+*/
