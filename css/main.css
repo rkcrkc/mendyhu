@@ -15,6 +15,15 @@
 	float: left;
 }
 
+p, a {
+	text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+
+}
+
 body {
 	font-family: sans-serif;
 	color: ;
@@ -29,6 +38,7 @@ h1 /* Landing title */{
 
 h2  /* Strapline text */{
 	font-size: 26px;
+	color: white;
 	line-height: 1.5;
 }
 
@@ -46,13 +56,13 @@ p  /* Regular content */{
 
 .divider {
 	height: 1px;
-	width: 60%;
+	width: 40%;
 	border-color: silver;
 	margin-bottom: 50px;
 }
 
 #landing {
-	background: url(../images/junk.jpg);
+	background: url(../images/07.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -122,6 +132,7 @@ p  /* Regular content */{
 #portfolio {
 	width: 100%;
 	text-align: center;
+	margin-bottom: 70px;
 }
 
 #portfolio h2 {
@@ -129,23 +140,66 @@ p  /* Regular content */{
 }
 
 #portfolio img {
-	width: 100%;
+	width: 75%;
+	height: 600px;
+	margin: 0 auto;
 }
+
+/* === Carousel fade effect === */
+.carousel-fade .item {
+	-webkit-transition: opacity 1.5s;
+	 -moz-transition: opacity 1.5s;
+	  -ms-transition: opacity 1.5s;
+	   -o-transition: opacity 1.5s;
+	    transition: opacity 1.5s;}
+
+.carousel-fade .active.left {
+	left:0;
+	opacity:0;
+	z-index:2;
+}
+
+.carousel-fade .next {
+	left:0;
+	opacity:1;
+	z-index:1;
+}
+
+/* === Carousel arrows === */
+
+.carousel-control {
+  color: black;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: black;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: none;
+  opacity: .7;
+}
+
+/* Edits side panel behind arrows i.e. gradient panel */
+.carousel-control.left {
+	background-image: none;}
+.carousel-control.right {
+	background-image: none;
+}
+/* === End of carousel arrows === */
 
 #skills {
 	background: white;
 	width: 100%;
-	padding: 50px 75px 50px 75px;
+	padding: 10px 30px 50px 30px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-#skillspanels {
-	margin: 0 auto;
-}
-
 #contact {
-	background: url(../images/congruent_pentagon.png);
+	background: url(../images/contemporary_china.png);
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
@@ -166,7 +220,7 @@ p  /* Regular content */{
 	height: 200px;
 	border-radius: 50%;
 	border: 4px solid white;
-	margin: 30px;
+	margin: 5px;
 }
 
 footer {
@@ -177,14 +231,141 @@ footer {
 	color: silver;
 }
 
-p, a {
-	text-decoration: none;
-}
-
 /*----------------------------------------------------------------------------- 
 =SKILLS PANELS  
 -----------------------------------------------------------------------------*/
 
+/* === GRID STRUCTURE === */
+
+.skills-row {
+	
+}
+
+.panel-hor {
+	width: 465px;
+	height: 300px;
+	margin: 15px 20px 15px 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.panel-ver {
+	width: 300px;
+	height: 465px;
+	margin: 15px 20px 15px 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.panel-container {
+	position: absolute;
+	top: 0;
+}
+
+
+/* === PANEL STYLING === */
+
+#vpanel1 /* Vertical panel 1 base */{
+	background: url(../images/creativewall.jpg);
+	width: 300px;
+	height: 465px;
+	position: relative;
+}
+
+#vpanel2 /* Vertical panel 2 base */{
+	background: url(../images/congruent_pentagon.png);
+	width: 300px;
+	height: 465px;
+	position: relative;
+}
+
+#vpanel3 /* Vertical panel 3 base */{
+	background: url(../images/daff-fall-2013-5.jpg);
+	width: 300px;
+	height: 465px;
+	position: relative;
+}
+
+#hpanel1 /* Horizontal panel 1 base */{
+	background: url(../images/food.png);
+	width: 465px;
+	height: 300px;
+	position: relative;
+}
+
+#hpanel2 /* Horizontal panel 2 base */{
+	background: url(../images/crowdedmall.jpg);
+	width: 465px;
+	height: 300px;
+	position: relative;
+}
+
+#hpanel3 /* Horizontal panel 3 base */{
+	background: url(../images/restaurant.png);
+	width: 465px;
+	height: 300px;
+	position: relative;
+}
+
+/* Vertical panel content holder */
+.panel-vertical-title {
+	background-color: rgba(244,113,67,1);
+	width: 170px;
+	padding: 4px;
+	margin: 0px 65px 0px 65px;
+	position: absolute;
+	top: 0;
+}
+
+.panel-vertical-text {
+	background-color: rgba(0,0,0,0.5);
+	width: 200px;
+	margin: 80px auto;
+	padding: 0px 10px 0px 10px;
+	position: absolute;
+	top: 60px;
+	left: 50px;
+}
+
+.panel-vertical-content-style1 {
+	background-color: rgba(244,113,67,0.8);
+	width: 300px;
+	height: 250px;
+	padding: 25px 35px 0px 35px;
+	position: absolute;
+	bottom: 0;
+}
+
+.panel-vertical-content-style2 {
+	background-color: rgba(244,113,67,0.5);
+	width: 300px;
+	height: 160px;
+	padding: 15px 25px 10px 25px;
+	position: absolute;
+	top: 150px;
+	
+}
+
+/* Horizontal panel content holder */
+.panel-horizontal-content {
+	background-color: rgba(244,113,67,0.35);
+	width: 275px;
+	padding: 4px;
+	position: absolute;
+	top: 10%;
+	left: 95px;
+}
+
+.panel-horizontal-content-style1 {
+	background-color: rgba(244,113,67,1);
+	width: 465px;
+	height: 160px;
+	padding: 15px 30px 0px 30px;
+	position: absolute;
+	top: 0;
+}
+
+/* Panel content styling */
 h5 /* Panel title */{
 	font-size: 20px;
 	color: white;
@@ -194,75 +375,6 @@ h6 /* Panel text */{
 	font-size: 14px;
 	line-height: 1.35;
 	color: white;
-}
-
-.panelrow1 {
-	width: 300px;
-	min-height: ;
-	margin: 15px;
-	display: inline-block;
-}
-
-.panelrow2 {
-	width: 465px;
-	height: ;
-	margin: 15px;
-	display: inline-block;
-}
-
-#panel1 /* Panel 1 base */{
-	background: url(../images/food.png);
-}
-
-#panel2 /* Panel 2 base */{
-	background: url(../images/food.png);
-}
-
-#panel3 /* Panel 3 base */{
-	background: url(../images/food.png);
-}
-
-#panel4 /* Panel 4 base */{
-	background: url(../images/restaurant.png);
-}
-
-#panel5 /* Panel 5 base */{
-	background: url(../images/restaurant.png);
-}
-
-/* ========= Vertical panels ========= */
-.panel-vertical-base {
-	background: ;
-}
-
-.panel-vertical-title {
-	background: orange;
-	width: 170px;
-	padding: 4px;
-	margin: 0px 65px 0px 65px;
-}
-
-.panel-vertical-text {
-	background-color: rgba(0,0,0,0.5);
-	width: 200px;
-	margin: 80px auto;
-	padding: 0px 10px 0px 10px;
-}
-
-.panel-vertical-text h5 {
-	opacity: 1;
-}
-
-/* ========= Horizontal panels ========= */
-.panel-horizontal-base {
-	background: ;
-}
-
-.panel-horizontal-content {
-	background-color: rgba(0,0,0,0.5);
-	width: 275px;
-	padding: 4px;
-	margin: 50px auto;
 }
 
 /* ========= Panel 5 =========
@@ -284,3 +396,5 @@ h6 /* Panel text */{
 	margin: 50px auto;
 }
 */
+
+
