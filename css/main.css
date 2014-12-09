@@ -196,7 +196,7 @@ nav ul li a:hover {
 }
 
 #portfolio h3 {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 54px;
 	color: rgba(250,105,0,1);
 }
@@ -207,6 +207,7 @@ nav ul li a:hover {
 }
 
 #portfolio h6 {
+	color: white;
 }
 
 #portfolio img {
