@@ -21,37 +21,60 @@ p, a {
 
 a:hover, a:visited, a:link, a:active {
 	text-decoration: none;
-
 }
 
 body {
 	font-family: sans-serif;
-	color: ;
 	line-height: 1.5;
 }
 
 h1 /* Landing title */{
+	font-family: 'Lobster', sans-serif;
 	font-size: 90px;
 	margin-bottom: 25px;
 	margin-top: 0px;
+	color: rgba(252,93,93,1);
 }
 
-h2  /* Strapline text */{
+h2  /* Section title text */{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 50px;
+	margin: 20px 0 30px 0;
+	color: rgba(252,93,93,1);
+}
+
+h3  /* Strapline text */{
+	font-family: 'Raleway', sans-serif;
 	font-size: 26px;
 	color: white;
 	line-height: 1.5;
 }
 
-h3  /* Section title text */{
-	font-size: 50px;
-	margin: 5px 0 30px 0;
-	color: orange;
-}
-
-p  /* Regular content */{
+h4 /* Regular content */{
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	line-height: 1.7;
 	margin: 20px 0px 20px 0px;
+}
+
+h5 /* Skills panel title */{
+	font-family: 'Lobster', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: white;
+}
+
+p  /* Regular content */{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.35;
+	color: white;
+	text-align: justify;
 }
 
 .divider {
@@ -61,72 +84,109 @@ p  /* Regular content */{
 	margin-bottom: 50px;
 }
 
+#landing-overlay {
+	background-color: rgba(0,0,0,0.15);
+	padding-top: 70px;
+}
+
 #landing {
 	background: url(../images/07.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	padding-top: 100px;
 	width: 100%;
 	margin: 0 auto 0 auto;
-	color: orange;
 	text-align: center;
 }
 
-#landingoverlay {
-	background-color: rgba(0,0,0,0.5);
-	width: 65%;
-	padding: 15px;
-	margin: 0 auto 0 auto;
+#landing-content {
+	background-color: rgba(0,0,0,0);
 }
 
 .profilepic /* Landing page pic */{
-	width: 150px;
-	height: 150px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
-	border: 4px solid white;
+	border: 3px solid rgba(105,210,231,1);
 	margin-bottom: 20px;
 }
 
 #strapline /* Landing page strapline */{
-	padding-bottom: 5px;
+	padding-bottom: ;
 	width: 60%;
 	margin: 0 auto 0 auto;
 }
 
+#strapline h3 {
+	/* color: rgba(105,210,231,1); */
+	font-weight: bold;
+}
+
 #social /* Social media icons */{
 	width: 220px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 25px;
-	padding-bottom: 50px;
+	margin: 25px auto;
 	text-decoration: none;
 }
 
 #social img {
-	height: 52px;
+	height: 45px;
+	opacity: 0.8;
 }
 
-#bio {
+#social img:hover {
+	opacity: 0.9;
+	transition: 0.1s ease-in;
+}
+
+#nav-container /* Navigation bar */ {
+	background-color: rgba(0,0,0,0);
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+nav ul li a {
+	margin: 16px;
+	padding: 0px 30px;
+	display: block;
+	color: rgba(250,105,0,1);
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: rgba(250,105,0,0.8);
+	transition: color 0.3s ease-in;
+}
+
+#bio /* About Me section */{
 	background: ;
 	width: 100%;
-	padding: 60px 90px 0px 90px;
+	padding: 0px 120px 0px 120px;
+	text-align: justify;
+}
+
+#bio h2 {
 	text-align: center;
 }
 
 #bio .col-xs-6 {
 	padding: 15px;
+	position: relative;
 }
 
 #bio img {
-   margin-top: 15%;
 }
 
 .biopic /* Pic in Bio section */{
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
-	border: 4px solid orange;
+	border: 4px solid rgba(105,210,231,1);
+	position: absolute;
+	top: 150px;
+	left: 175px;
 }
 
 #portfolio {
@@ -135,14 +195,25 @@ p  /* Regular content */{
 	margin-bottom: 70px;
 }
 
-#portfolio h2 {
-	padding-bottom: 150px;
+#portfolio h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 54px;
+	color: rgba(250,105,0,1);
+}
+
+#portfolio h4 {
+	font-size: 24px;
+	padding-bottom: 100px;
+}
+
+#portfolio h6 {
 }
 
 #portfolio img {
 	width: 75%;
 	height: 600px;
 	margin: 0 auto;
+	padding-top: 20px;
 }
 
 /* === Carousel fade effect === */
@@ -191,9 +262,8 @@ p  /* Regular content */{
 /* === End of carousel arrows === */
 
 #skills {
-	background: white;
 	width: 100%;
-	padding: 10px 30px 50px 30px;
+	padding: 0 30px 50px 30px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -203,24 +273,26 @@ p  /* Regular content */{
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
-	padding: 50px 75px 0px 75px;
+	padding: 20px 75px 0px 75px;
 	text-align: center;
-}
-
-#contact p {
-	font-size: 24px;
-}
-
-#contact #social {
-	margin-top: 40px;
 }
 
 .contactpic /* Pic in Contact section */{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	border: 4px solid white;
+	border: 4px solid rgba(105,210,231,1);
 	margin: 5px;
+}
+
+#contact-content {
+	padding-top: 30px;
+	margin: 0 auto 0 auto;
+	width: 67%;
+}
+
+#contact #social {
+	margin-top: 40px;
 }
 
 footer {
@@ -229,6 +301,20 @@ footer {
 	padding: 10px;
 	padding-left: 50px;
 	color: silver;
+}
+
+footer p {
+	margin: 20px 10px;
+}
+
+footer a {
+	color: silver;
+}
+
+footer a:hover {
+	color: silver;
+	opacity: 0.8;
+	transition: color 0.3s ease-in;
 }
 
 /*----------------------------------------------------------------------------- 
@@ -244,7 +330,7 @@ footer {
 .panel-hor {
 	width: 465px;
 	height: 300px;
-	margin: 15px 20px 15px 20px;
+	margin: 15px 5px 15px 5px;
 	display: inline-block;
 	position: relative;
 }
@@ -270,6 +356,7 @@ footer {
 	width: 300px;
 	height: 465px;
 	position: relative;
+	background-position: 50%;
 }
 
 #vpanel2 /* Vertical panel 2 base */{
@@ -287,10 +374,11 @@ footer {
 }
 
 #hpanel1 /* Horizontal panel 1 base */{
-	background: url(../images/food.png);
+	background: url(../images/daff-fall-2013-6.jpg);
 	width: 465px;
 	height: 300px;
 	position: relative;
+	background-size: 110%;
 }
 
 #hpanel2 /* Horizontal panel 2 base */{
@@ -298,6 +386,7 @@ footer {
 	width: 465px;
 	height: 300px;
 	position: relative;
+	background-position: 50%;
 }
 
 #hpanel3 /* Horizontal panel 3 base */{
@@ -309,7 +398,7 @@ footer {
 
 /* Vertical panel content holder */
 .panel-vertical-title {
-	background-color: rgba(244,113,67,1);
+	background-color: rgba(254,105,96,1);
 	width: 170px;
 	padding: 4px;
 	margin: 0px 65px 0px 65px;
@@ -318,17 +407,17 @@ footer {
 }
 
 .panel-vertical-text {
-	background-color: rgba(0,0,0,0.5);
-	width: 200px;
+	background-color: rgba(250,105,0,0.6);
+	width: 220px;
 	margin: 80px auto;
-	padding: 0px 10px 0px 10px;
+	padding: 15px 10px 15px 10px;
 	position: absolute;
-	top: 60px;
-	left: 50px;
+	top: 75px;
+	left: 42px;
 }
 
 .panel-vertical-content-style1 {
-	background-color: rgba(244,113,67,0.8);
+	background-color: rgba(105,210,231,0.8);
 	width: 300px;
 	height: 250px;
 	padding: 25px 35px 0px 35px;
@@ -337,7 +426,7 @@ footer {
 }
 
 .panel-vertical-content-style2 {
-	background-color: rgba(244,113,67,0.5);
+	background-color: rgba(254,105,96,0.6);
 	width: 300px;
 	height: 160px;
 	padding: 15px 25px 10px 25px;
@@ -348,33 +437,21 @@ footer {
 
 /* Horizontal panel content holder */
 .panel-horizontal-content {
-	background-color: rgba(244,113,67,0.35);
-	width: 275px;
-	padding: 4px;
+	background-color: rgba(254,105,96,0.6);
+	width: 320px;
+	padding: 5px 15px;
 	position: absolute;
 	top: 10%;
 	left: 95px;
 }
 
 .panel-horizontal-content-style1 {
-	background-color: rgba(244,113,67,1);
+	background-color: rgba(252,145,58,1);
 	width: 465px;
 	height: 160px;
 	padding: 15px 30px 0px 30px;
 	position: absolute;
 	top: 0;
-}
-
-/* Panel content styling */
-h5 /* Panel title */{
-	font-size: 20px;
-	color: white;
-}
-
-h6 /* Panel text */{
-	font-size: 14px;
-	line-height: 1.35;
-	color: white;
 }
 
 /* ========= Panel 5 =========
