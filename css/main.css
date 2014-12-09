@@ -66,7 +66,7 @@ h5 /* Skills panel title */{
 h6 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
-	color: white;
+	color: #333;
 }
 
 p  /* Regular content */{
@@ -139,7 +139,7 @@ p  /* Regular content */{
 }
 
 #nav-container /* Navigation bar */ {
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0.3);
 }
 
 nav ul li {
@@ -214,6 +214,7 @@ nav ul li a:hover {
 	height: 600px;
 	margin: 0 auto;
 	padding-top: 20px;
+	opacity: 0.75;
 }
 
 /* === Carousel fade effect === */
@@ -269,11 +270,11 @@ nav ul li a:hover {
 }
 
 #contact {
-	background: url(../images/contemporary_china.png);
+	background: url(../images/food.png);
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
-	padding: 20px 75px 0px 75px;
+	padding: 20px 75px 20px 75px;
 	text-align: center;
 }
 
@@ -298,17 +299,16 @@ nav ul li a:hover {
 footer {
 	background: url(../images/footer_lodyas.png);
 	width: 100%;
-	padding: 10px;
-	padding-left: 50px;
-	color: silver;
+	padding: 40px 50px 50px 50px;
 }
 
 footer p {
-	margin: 20px 10px;
+	color: silver;
 }
 
 footer a {
 	color: silver;
+	margin-bottom: 0;
 }
 
 footer a:hover {
