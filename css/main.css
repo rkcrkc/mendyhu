@@ -1,8 +1,6 @@
 /*----------------------------------------------------------------------------- 
-=CUSTOM STYLES  
+1. BASE STYLES  
 -----------------------------------------------------------------------------*/
-@import url();
-
 .clear {
 	clear: both;
 }
@@ -24,199 +22,167 @@ a:hover, a:visited, a:link, a:active {
 }
 
 body {
-	font-family: sans-serif;
-	line-height: 1.5;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-align: center;
 }
 
-h1 /* Landing title */{
-	font-family: 'Lobster', sans-serif;
-	font-size: 90px;
-	margin-bottom: 25px;
-	margin-top: 0px;
-	color: rgba(252,93,93,1);
+h1 /* Banner title */{
+	font-size: 65px;
+	font-weight: 200;
+	letter-spacing: 0.0625em;
+	text-align: center;
 }
 
 h2  /* Section title text */{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 50px;
-	margin: 20px 0 30px 0;
-	color: rgba(252,93,93,1);
+	font-size: 35px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0;
+	padding: 12px 18px 28px 18px;
+	text-align: center;
 }
 
 h3  /* Strapline text */{
-	font-family: 'Raleway', sans-serif;
-	font-size: 26px;
-	color: white;
+	font-size: 30px;
+	font-weight: 400;
 	line-height: 1.5;
+	margin: 10px 0 0 0;
+	text-transform: uppercase;
+	text-align: center;
 }
 
-h4 /* Regular content */{
-	font-family: 'Open Sans', sans-serif;
+h4 /* Alternative section title text */{
+	font-size: 50px;
+	font-weight: 300;
+	padding: 12px 18px 28px 18px;	
+	text-align: center;
+}
+
+#intro h3 {
+		margin: 10px 0 -10px 0;
+}
+
+p, li  /* Regular content */{
 	font-size: 18px;
-	line-height: 1.7;
-	margin: 20px 0px 20px 0px;
-}
-
-h5 /* Skills panel title */{
-	font-family: 'Lobster', sans-serif;
-	font-size: 20px;
-	color: white;
-}
-
-h6 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	color: #333;
-}
-
-p  /* Regular content */{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	line-height: 1.35;
-	color: white;
+	font-weight: 300;
+	line-height: 1.5;
 	text-align: justify;
 }
 
 .divider {
 	height: 1px;
-	width: 40%;
+	width: 75%;
 	border-color: silver;
-	margin-bottom: 50px;
+	margin: 0 auto;
 }
 
-#landing-overlay {
-	background-color: rgba(0,0,0,0.15);
-	padding-top: 70px;
-}
 
-#landing {
-	background: url(../images/07.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	width: 100%;
+/*----------------------------------------------------------------------------- 
+2. SECTION ELEMENTS  
+-----------------------------------------------------------------------------*/
+
+.pagecontainer /* Body container */{
+	max-width: 775px;
 	margin: 0 auto 0 auto;
-	text-align: center;
 }
 
-#landing-content {
-	background-color: rgba(0,0,0,0);
+.section {
+	margin: 0px;
+	padding: 20px 0;
 }
 
-.profilepic /* Landing page pic */{
-	width: 160px;
-	height: 160px;
+#banner {
+	padding: 5px 20px 0 20px;
+}
+
+.profilepic {
 	border-radius: 50%;
-	border: 3px solid rgba(105,210,231,1);
-	margin-bottom: 20px;
-}
-
-#strapline /* Landing page strapline */{
-	padding-bottom: ;
-	width: 60%;
-	margin: 0 auto 0 auto;
-}
-
-#strapline h3 {
-	/* color: rgba(105,210,231,1); */
-	font-weight: bold;
+	max-height: 190px;
+	max-width: 190px;
+	margin-top: 30px;
+	margin-left: 25px;
 }
 
 #social /* Social media icons */{
-	width: 220px;
-	margin: 25px auto;
+	width: 200px;
+	margin: 25px auto 10px auto;
 	text-decoration: none;
 }
 
 #social img {
-	height: 45px;
-	opacity: 0.8;
+	height: 40px;
+	opacity: 0.75;
 }
 
 #social img:hover {
 	opacity: 0.9;
-	transition: 0.1s ease-in;
 }
 
-#nav-container /* Navigation bar */ {
-	background-color: rgba(0,0,0,0.3);
+#intro {
+
 }
 
-nav ul li {
-	display: inline-block;
-	list-style: none;
+#ventures {
+
 }
 
-nav ul li a {
-	margin: 16px;
-	padding: 0px 30px;
-	display: block;
-	color: rgba(250,105,0,1);
-	font-weight: bold;
+#background {
+
 }
 
-nav ul li a:hover {
-	color: rgba(250,105,0,0.8);
+#interests {
+
+}
+
+#bucket {
+
+}
+
+#contact {
+	padding-bottom: 50px;
+}
+
+#contactpic {
+	border-radius: 50%;
+	max-height: 175px;
+	max-width: 175px;
+	border: 2px solid skyblue;
+	margin-bottom: 35px;
+}
+
+#contact p {
+	text-align: center;
+}
+
+#contact #social {
+	margin-top: 45px;
+}
+
+footer {
+	background: url(../images/footer_lodyas.png);
+	width: 100%;
+	padding: 40px 50px 50px 50px;
+}
+
+footer p {
+	font-size: 14px;
+	color: silver;
+}
+
+footer a {
+	color: silver;
+	margin-bottom: 0;
+}
+
+footer a:hover {
+	color: silver;
+	opacity: 0.8;
 	transition: color 0.3s ease-in;
 }
 
-#bio /* About Me section */{
-	background: ;
-	width: 100%;
-	padding: 0px 120px 0px 120px;
-	text-align: justify;
-}
-
-#bio h2 {
-	text-align: center;
-}
-
-#bio .col-xs-6 {
-	padding: 15px;
-	position: relative;
-}
-
-#bio img {
-}
-
-.biopic /* Pic in Bio section */{
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	border: 4px solid rgba(105,210,231,1);
-	position: absolute;
-	top: 150px;
-	left: 175px;
-}
-
-#portfolio {
-	width: 100%;
-	text-align: center;
-	margin-bottom: 70px;
-}
-
-#portfolio h3 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 54px;
-	color: rgba(250,105,0,1);
-}
-
-#portfolio h4 {
-	font-size: 24px;
-	padding-bottom: 100px;
-}
-
-#portfolio h6 {
-	color: white;
-}
-
-#portfolio img {
-	width: 75%;
-	height: 600px;
-	margin: 0 auto;
-	padding-top: 20px;
-	opacity: 0.75;
-}
+/*----------------------------------------------------------------------------- 
+3. CAROUSEL  
+-----------------------------------------------------------------------------*/
 
 /* === Carousel fade effect === */
 .carousel-fade .item {
@@ -262,217 +228,4 @@ nav ul li a:hover {
 	background-image: none;
 }
 /* === End of carousel arrows === */
-
-#skills {
-	width: 100%;
-	padding: 0 30px 50px 30px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-#contact {
-	background: url(../images/food.png);
-	background-position: center;
-	background-attachment: fixed;
-	width: 100%;
-	padding: 20px 75px 20px 75px;
-	text-align: center;
-}
-
-.contactpic /* Pic in Contact section */{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	border: 4px solid rgba(105,210,231,1);
-	margin: 5px;
-}
-
-#contact-content {
-	padding-top: 30px;
-	margin: 0 auto 0 auto;
-	width: 67%;
-}
-
-#contact #social {
-	margin-top: 40px;
-}
-
-footer {
-	background: url(../images/footer_lodyas.png);
-	width: 100%;
-	padding: 40px 50px 50px 50px;
-}
-
-footer p {
-	color: silver;
-}
-
-footer a {
-	color: silver;
-	margin-bottom: 0;
-}
-
-footer a:hover {
-	color: silver;
-	opacity: 0.8;
-	transition: color 0.3s ease-in;
-}
-
-/*----------------------------------------------------------------------------- 
-=SKILLS PANELS  
------------------------------------------------------------------------------*/
-
-/* === GRID STRUCTURE === */
-
-.skills-row {
-	
-}
-
-.panel-hor {
-	width: 465px;
-	height: 300px;
-	margin: 15px 5px 15px 5px;
-	display: inline-block;
-	position: relative;
-}
-
-.panel-ver {
-	width: 300px;
-	height: 465px;
-	margin: 15px 20px 15px 20px;
-	display: inline-block;
-	position: relative;
-}
-
-.panel-container {
-	position: absolute;
-	top: 0;
-}
-
-
-/* === PANEL STYLING === */
-
-#vpanel1 /* Vertical panel 1 base */{
-	background: url(../images/creativewall.jpg);
-	width: 300px;
-	height: 465px;
-	position: relative;
-	background-position: 50%;
-}
-
-#vpanel2 /* Vertical panel 2 base */{
-	background: url(../images/congruent_pentagon.png);
-	width: 300px;
-	height: 465px;
-	position: relative;
-}
-
-#vpanel3 /* Vertical panel 3 base */{
-	background: url(../images/daff-fall-2013-5.jpg);
-	width: 300px;
-	height: 465px;
-	position: relative;
-}
-
-#hpanel1 /* Horizontal panel 1 base */{
-	background: url(../images/daff-fall-2013-6.jpg);
-	width: 465px;
-	height: 300px;
-	position: relative;
-	background-size: 110%;
-}
-
-#hpanel2 /* Horizontal panel 2 base */{
-	background: url(../images/crowdedmall.jpg);
-	width: 465px;
-	height: 300px;
-	position: relative;
-	background-position: 50%;
-}
-
-#hpanel3 /* Horizontal panel 3 base */{
-	background: url(../images/restaurant.png);
-	width: 465px;
-	height: 300px;
-	position: relative;
-}
-
-/* Vertical panel content holder */
-.panel-vertical-title {
-	background-color: rgba(254,105,96,1);
-	width: 170px;
-	padding: 4px;
-	margin: 0px 65px 0px 65px;
-	position: absolute;
-	top: 0;
-}
-
-.panel-vertical-text {
-	background-color: rgba(250,105,0,0.6);
-	width: 220px;
-	margin: 80px auto;
-	padding: 15px 10px 15px 10px;
-	position: absolute;
-	top: 75px;
-	left: 42px;
-}
-
-.panel-vertical-content-style1 {
-	background-color: rgba(105,210,231,0.8);
-	width: 300px;
-	height: 250px;
-	padding: 25px 35px 0px 35px;
-	position: absolute;
-	bottom: 0;
-}
-
-.panel-vertical-content-style2 {
-	background-color: rgba(254,105,96,0.6);
-	width: 300px;
-	height: 160px;
-	padding: 15px 25px 10px 25px;
-	position: absolute;
-	top: 150px;
-	
-}
-
-/* Horizontal panel content holder */
-.panel-horizontal-content {
-	background-color: rgba(254,105,96,0.6);
-	width: 320px;
-	padding: 5px 15px;
-	position: absolute;
-	top: 10%;
-	left: 95px;
-}
-
-.panel-horizontal-content-style1 {
-	background-color: rgba(252,145,58,1);
-	width: 465px;
-	height: 160px;
-	padding: 15px 30px 0px 30px;
-	position: absolute;
-	top: 0;
-}
-
-/* ========= Panel 5 =========
-#panel5 {
-	background: url(../images/restaurant.png);
-}
-
-#panel5-a {
-	background: grey;
-	width: 175px;
-	height: 70px;
-	padding: 4px;
-	margin: 0px 145px;
-}
-
-#panel5-b {
-	background: grey;
-	width: 250px;
-	margin: 50px auto;
-}
-*/
-
 
